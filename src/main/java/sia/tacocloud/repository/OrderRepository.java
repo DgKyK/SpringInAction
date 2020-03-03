@@ -5,9 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-import sia.tacocloud.domain.Order;
+import sia.tacocloud.domain.Oreder;
 
 @Repository
-public interface OrderRepository extends CrudRepository<Order, Long> {
-    List<Order> findByDeliveryZip(String deliveryZip);
+public interface OrderRepository extends CrudRepository<Oreder, Long> {
+    List<Oreder> findByZip(String zip);
 }
